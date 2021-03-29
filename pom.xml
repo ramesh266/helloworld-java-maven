@@ -7,10 +7,16 @@
   <version>2.0.0</version>
   <name>my-maven</name>
   <url>http://maven.apache.org</url>
- <configuration>
+	<plugins>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-javadoc-plugin</artifactId>
+    <configuration>
       <additionalparam>-Xdoclint:none</additionalparam>
-    </configuration>	
-	
+    </configuration>
+  </plugin>
+</plugins>
+ 
 <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<maven.compiler.source>6</maven.compiler.source>
