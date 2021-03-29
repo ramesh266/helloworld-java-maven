@@ -7,6 +7,7 @@
   <version>2.0.0</version>
   <name>my-maven</name>
   <url>http://maven.apache.org</url>
+	<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 	
 <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
