@@ -1,73 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.scmgalaxy.mavensample</groupId>
-  <artifactId>my-maven</artifactId>
-  <packaging>jar</packaging>
-  <version>2.0.0</version>
-  <name>my-maven</name>
-  <url>http://maven.apache.org</url>
-	
- 
-<properties>
-  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	
-</properties>
-
-	<dependency>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.8.1</version>
-  <type>maven-plugin</type>
-</dependency>
-	
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  
-  <build>
-	<plugins>
-		<plugin>
-			<properties>
-   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<maven.compiler.source>6</maven.compiler.source>
-   <maven.compiler.target>1.6</maven.compiler.target>
-</properties>  
-		
-			<configuration>
-      <additionalOptions>-Xdoclint:none</additionalOptions>
-    </configuration>
-			<executions>
-				<execution>
-					<id>attach-javadocs</id>
-					<goals>
-						<goal>jar</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
-	</build>
-<distributionManagement>
-    <repository>
-        <id>aleesha</id>
-        <name>aleesha-releases</name>
-        <url>http://13.232.2.248:8080/artifactory/muniraja</url>
-    </repository>
-    <snapshotRepository>
-        <id>aleesha</id>
-        <name>aleesha-snapshots</name>
-        <url>http://13.232.2.248:8080/artifactory/muniraja</url>
-    </snapshotRepository>
-</distributionManagement>
-
-
-
-
-
-</project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"> 
+	<modelVersion>4.0.0</modelVersion>   
+	<groupId>com.cruds.demo</groupId>  
+	<artifactId>calcwebapp</artifactId>  
+	<packaging>war</packaging> 
+	<version>0.0.1-SNAPSHOT</version>  
+	<name>calcwebapp Maven Webapp</name>  
+	<url>http://maven.apache.org</url>  
+	<properties> 	 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source> 
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>      
+	<dependencies>   
+		<dependency>  
+			<groupId>junit</groupId>   
+			<artifactId>junit</artifactId>    
+			<version>4.12</version>     
+			<scope>test</scope>  
+		</dependency>      
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api --> 	
+	<dependency> 
+		<groupId>javax.servlet</groupId> 
+		<artifactId>javax.servlet-api</artifactId>
